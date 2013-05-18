@@ -1,9 +1,20 @@
-sum = 0 
+#(1..13195).to_a.each {|sum, x| puts sum }.select {}
+#puts 13195 % (1..100).to_a == 0
 
-600851475143.times do |n|
-  if n%5==0 || n%7==0 || n%13==0 || n%29==0
-    sum += n   
-  end
+
+
+def prime(n)
+	sum = 0
+
+	for i in (1..n)
+		if n % 2 == 0
+			#puts sum+=n
+			m = (sum+=n)
+			puts m
+		elsif 9 % 3 == 0
+			puts Math.sqrt(n)
+		end
+	end
 end
 
-p sum
+prime(9)
