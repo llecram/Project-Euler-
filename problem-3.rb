@@ -1,20 +1,35 @@
+# The prime factors of 13195 are 5, 7, 13 and 29.
+# What is the largest prime factor of the number 600851475143?
+
 #(1..13195).to_a.each {|sum, x| puts sum }.select {}
 #puts 13195 % (1..100).to_a == 0
 
-
-
 def prime(n)
-	sum = 0
+	a = []
+	h = n
+	count = 0
 
-	for i in (1..n)
-		if n % 2 == 0
-			#puts sum+=n
-			m = (sum+=n)
-			puts m
-		elsif 9 % 3 == 0
-			puts Math.sqrt(n)
+	(1..n).each_with_index do |k, index|
+		#Gets 1 up to n gets all odd numbers divisble by n
+		if k % 2 !=0
+			#if n goes into k and has no remainder and does not
+			#equal itself or one show k
+			if n % k == 0 && n != k && k != 1
+				a << k
+				#p k
+				if a.inject(:/) > 0 
+					puts a 
+				end
+
+			end
 		end
+		
 	end
+
+
 end
 
-prime(9)
+prime(27)
+
+
+
