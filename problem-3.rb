@@ -6,19 +6,22 @@
 
 def prime(n)
 	a = []
-	h = n
 	count = 0
+	h = n
 
 	(1..n).each_with_index do |k, index|
 		#Gets 1 up to n gets all odd numbers divisble by n
 		if k % 2 !=0
 			#if n goes into k and has no remainder and does not
 			#equal itself or one show k
+
 			if n % k == 0 && n != k && k != 1
 				a << k
-				#p k
-				if a.inject(:/) > 0 
-					puts a 
+				#p a 
+				#p "#{k} => #{index}"
+				
+				if a.inject(:*) == h 
+					puts a
 				end
 
 			end
@@ -29,7 +32,7 @@ def prime(n)
 
 end
 
-prime(27)
+prime(600851475143)
 
 
 
