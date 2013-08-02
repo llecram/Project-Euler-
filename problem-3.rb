@@ -21,7 +21,7 @@ def prime(n)
 				#p "#{k} => #{index}"
 				
 				if a.inject(:*) == h 
-					puts a
+					p a.max
 				end
 
 			end
