@@ -6,20 +6,23 @@
 
 def prime(n)
 	a = []
-	h = n
 	count = 0
+	h = n
 
 	(1..n).map do |k|
 		#Gets 1 up to n gets all odd numbers divisble by n
 		if k % 2 !=0
 			#if n goes into k and has no remainder and does not
 			#equal itself or one show k
+
 			if n % k == 0 && n != k && k != 1
 				a << k
-				p a
 
-				if a.inject(:*) == 600851475143
-					p a
+				#p a 
+				#p "#{k} => #{index}"
+				
+				if a.inject(:*) == h 
+					p a.max
 				end
 				
 				#p k 
