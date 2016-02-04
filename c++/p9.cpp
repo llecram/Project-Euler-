@@ -37,5 +37,5 @@ void getPythagorean(int n)
 
 int main()
 {
-    getPythagorean(10);
+    getPythagorean(3);
 }
