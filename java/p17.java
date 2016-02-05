@@ -12,7 +12,8 @@ public class p17 {
     String[] ones_pos = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"};
     
     String[] hundreds_and_thousands_pos = {"hundred", "thousand"};
-     
+    {"thir", "four","fif", "six","seven","eight}
+    String num_ty = {"ty"};
     for(int i=0; i < ones_pos.length; i++)
     {
       if(ones_pos[i].equals(ones_pos[Integer.parseInt(num)-1]))
@@ -26,7 +27,7 @@ public class p17 {
   public static void main(String[] args)
   {
     
-    num_to_words("3");
+    num_to_words("32");
     //System.out.println( decimal_place("45321") );
   }
 }
