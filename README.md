@@ -16,6 +16,8 @@ PROBLEMS SOLVED:
 
 ~~6. Sum square difference~~
 
+~~9. Special Pythagorean triplet~~
+
 ~~16. Power digit sum~~
 
 ~~20. Factorial digit sum~~
